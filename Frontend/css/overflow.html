@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow Concepts</title>
+    <style>
+        .maindiv {
+            /* width: 200px;
+            height: 200px; */
+            border: 2px solid red;
+            overflow: auto;
+            /* This will add scrollbars if the content overflows*/
+        } 
+        @media screen and (max-width:768px) and (orientation: portrait) {
+            .maindiv {
+                width: 400px;
+                height: 400px;
+                color:blue;
+                border: 2px solid gray;
+            } 
+        }
+            @media screen and (min-width:1024px) and (orientation: landscape) {
+                .maindiv {
+                    width: auto;
+                    height: auto;
+                    color:rgb(0, 128, 70);
+                    border: 2px solid green;
+                }
+            }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="maindiv">
+        <p>
+            In CSS, the overflow property is used to specify how content that overflows the element's box should be
+            handled. This property is useful when the content within an element is larger than the element itself.
+            Here are some common values for the overflow property
+            In CSS, the overflow property is used to specify how content that overflows the element's box should be
+            handled. This property is useful when the content within an element is larger than the element itself.
+            Here are some common values for the overflow property
+        </p>
+
+    </div>
+
+</body>
+
+</html>

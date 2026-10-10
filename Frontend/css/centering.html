@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centering</title>
+ <style>
+        form{
+            border: 1px solid gray;
+            max-width: auto;
+            max-height: auto;
+            width: 300px;
+            height: auto;
+            /* position: absolute;
+            transform: translate(40vw, 30vh); */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        }
+
+        * {
+            margin: 10px;
+        }
+        /* .flex-container{
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            width:auto;
+            height:90vh;
+            background-color: #314755;
+            border:1px solid gray;
+        } */
+         .item{
+            left:50%;
+            top:50%;
+            transform: translate(-50%, -50%);
+            position:absolute;
+
+
+         }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <form class="item">
+            <h1>Login Page</h1>
+            <label>Email id</label>
+            <input type="email" placeholder="Enter your Email" required /><br />
+            <label>Password</label>
+            <input type="password" placeholder="Enter your password" required /></br>
+            <button type="submit" class="btn-grad">Login</button>
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+</html>

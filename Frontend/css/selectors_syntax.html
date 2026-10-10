@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+        p,li,ol,ul,div,h1 {
+            color:brown;
+        }
+         .inputField{
+            background-color:rgb(237, 147, 198) !important;
+        }
+         #Lastname{
+            background-color: aquamarine;
+         }
+         #Firstname{
+            background:gray;
+         }
+         button:hover{
+        cursor:ew-resize;
+
+         }
+         div p{
+            color:blue;
+         }
+         div >p{
+            color:blue;
+         }
+         div +p{
+            color:rgb(219, 26, 164); 
+         }
+         div ~p{
+            color:orange;
+         }
+         input[type="text"]{
+            background-color:rgb(101, 42, 165);
+            color:rgb(7, 7, 7);
+         }
+         li:nth-child(2){
+            color:blue;
+         }
+         input:not(:disabled){
+            background-color: black !important;
+            color:white;
+         }
+         a:hover{
+            
+         }
+    </style>
+</head>
+
+<body>
+    <p>This is the Selectors and Syntax of the css</p>
+    <ol>
+        <li>java</li>
+        <li>python</li>
+        <li>Dotnet</li>
+    </ol>
+    <ul>
+        <li>Java unorder</li>
+        <li>Python unorder</li>
+        <li>dotnet unorder</li>
+    </ul>
+    <h1>This header 1</h1>
+    <label for="Firstname"></label>
+    <input type="text" placeholder="Enter First name" class="inputField" id="Firstname" />
+    <label for="Lastname"></label>
+    <input type="text" placeholder="Enter Last name" class="inputField" id="Lastname" />
+    <input type="range" min="10" max="200" value="40" id="range" />
+      <div>
+        <p>This is a paragraph inside division</p>
+    </div>
+    <div>
+        <p> This is paragraph inside division2</p>
+        <p>This is the paragraph inside division3</p>
+    </div>
+    <p>This is the end paragraph</p> 
+     <p>This is the end paragraph</p> 
+    <button>Submit</button>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Web Forms</title>
+</head>
+
+<body>
+
+    <form>
+        <!-- First Name -->
+        <label for="firstnameId">First Name:</label>
+        <input
+            type="text"
+            id="firstnameId"
+            name="firstname"
+            autocomplete="on"
+            required
+            placeholder="Enter Some Name"
+        />
+
+        <br><br>
+
+        <!-- URL -->
+        <label for="url">URL:</label>
+        <input
+            type="url"
+            id="url"
+            name="url"
+            placeholder="Enter URL"
+        />
+
+        <br><br>
+
+        <!-- Age -->
+        <label for="age">Age:</label>
+        <input
+            type="number"
+            id="age"
+            name="age"
+            min="18"
+            max="90"
+            placeholder="Age"
+        />
+
+        <br><br>
+
+        <!-- Phone Number -->
+        <label for="phone">Phone Number:</label>
+        <input
+            type="tel"
+            id="phone"
+            name="phone"
+            pattern="[0-9]{10}"
+            placeholder="10-digit phone number"
+        />
+
+        <br><br>
+
+        <!-- Date -->
+        <label for="date">Select Date:</label>
+        <input
+            type="date"
+            id="date"
+            name="date"
+        />
+
+        <br><br>
+
+        <!-- Date and Time -->
+        <label for="datetime">Select Date and Time:</label>
+        <input
+            type="datetime-local"
+            id="datetime"
+            name="datetime"
+        />
+
+        <br><br>
+
+        <!-- Select Course -->
+        <label for="course">Select Course:</label>
+        <select id="course" name="course">
+            <optgroup label="Full Stack Courses">
+                <option value="python">Python Full Stack</option>
+                <option value="java">Java Full Stack</option>
+                <option value="dotnet">.NET Full Stack</option>
+                <option value="mern">MERN Full Stack</option>
+            </optgroup>
+        </select>
+
+        <br><br>
+
+        <!-- Datalist -->
+        <label for="courseList">Choose Course:</label>
+        <input
+            list="courses"
+            id="courseList"
+            name="courseList"
+            placeholder="Select course"
+        />
+
+        <datalist id="courses">
+            <option value="Python Full Stack">
+            <option value="Java Full Stack">
+            <option value=".NET Full Stack">
+            <option value="MERN Full Stack">
+        </datalist>
+
+        <br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+
+</html>
